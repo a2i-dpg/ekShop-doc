@@ -5,32 +5,21 @@
 
 # Flash Deals
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to configure what banners are displayed for a flash sale campaign and their associated webpages in the website**
 
 ![](images/others/flashdeals.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
-
-
 # Subscribers
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to view all registered people who have subscribed to the newsletter by email. We have the option of including them in a mail campaign, or delete entries**
 
 ![](images/others/subscribers.png)
-
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
 
 
 # Coupon
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to view and change coupons which are accepted for purchase items**
 
 ![](images/others/coupon.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
+We can configure the start date and end date for which the coupon will be valid in the website, as well as add/update/delete coupon codes 
