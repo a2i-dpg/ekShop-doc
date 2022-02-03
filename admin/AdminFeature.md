@@ -5,6 +5,7 @@
 
 - [Website-Settings](#website-settings)
 - [Configuration](#website-configuration)
+- [Merchant Management](SellerFeature.md)
 
 The admin has to [login](#) first. They will be redirected to their dashboard.
 
