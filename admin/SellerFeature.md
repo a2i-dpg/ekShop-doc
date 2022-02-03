@@ -8,23 +8,33 @@
 
 # All Seller
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to view and change the list of all the sellers that are registered in the platform**
 
 ![](images/others/allsellers.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
+The fields by which the sellers are indicated are:
 
-**Product** this is the product in the website for which the review is made
+**Name** which is the name of the seller
+
+**Phone** which is the phone number of the seller
+
+**Email address** which is the email address of the seller
+
+**Verification info** which is a code used to verify this account
+
+**Approve** is a toggle which determines whether or not this seller is approved to do business in our platform
+
+**Number of products** is the number of products the seller has listed in the platform
+
+**Due to seller** is the amount of money that is currently pending to be paid to the seller based on the transactions they have made
+
 
 # Payouts
 
-**This feature allows us to see the payments to be made to sellers in the site**
+**This feature allows us to see the payments made to sellers in the site**
 
 ![](images/others/payouts.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
 
 # Payout Requests
 
@@ -32,19 +42,13 @@ Product reviews refers to reviews that are left by customers for products in the
 
 ![](images/others/payoutrequest.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
 
 # Seller Commission
 
-**This feature allows us to view and change the commission given to sellers in the site**
+**This feature allows us to view and change the commission given to sellers in the site based on the sales made**
 
 ![](images/others/sellercommission.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
 
 # Seller Verification Form
 
@@ -52,7 +56,14 @@ Product reviews refers to reviews that are left by customers for products in the
 
 ![](images/others/sellerverificationform.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
+This form is captain customizable according to what is needed. The customization consists of various type of input fields including text input, select, multiple select, radio, and file.
 
-**Product** this is the product in the website for which the review is made
+**Text input** is a simple text entry field
 
+**Select** refers to having the option of selecting a an option amongst multiple that are offered
+
+**Multiple select** refers to question in which multiple options can be selected
+
+**Radio** refers to radio buttons which is similar to select buttons
+
+**File** is where a file can be uploaded in the field

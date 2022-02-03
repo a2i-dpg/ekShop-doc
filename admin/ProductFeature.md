@@ -337,8 +337,6 @@ Options - view the order, save the order as a file, delete the order
 
 
 
-Pick up point order refers to all the orders for which the option of delivery was pick up point. This means that these orders have to be picked up by the customer having to go to a pick up point that we have designated in the website.
-
 
 # Inhouse Orders
 
@@ -390,8 +388,6 @@ Options - view the order, save the order as a file, delete the order
 
 # Pickup Point Order
 
-Pick up point order refers to all the orders for which the option of delivery was pick up point. This means that these orders have to be picked up by the customer having to go to a pick up point that we have designated in the website.
-
 **This feature allows us to view and change orders made for which the delivery option was selected as Pick-Up**
 
 ![](images/others/pickuppointorder.png)
@@ -419,13 +415,17 @@ Options - view the order, save the order as a file, delete the order
 
 # Customer
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to view and change from the total list of all the customers registered in the website**
 
 ![](images/others/customers.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
+The fields indicated in this list our name, email address, phone number, package, wallet balance (which refers to how much credit they have in our platform).
 
-**Product** this is the product in the website for which the review is made
+In the options tab we have the option to either login as this customer and see the website from their view. We also have the option to ban this customer or delete this customer profile
+
+At the top we have the option of searching for customers by searching by their email or name
+
+Bulk action allows us to delete multiple accounts all at once
 
 
 # Uploaded Files
@@ -433,10 +433,6 @@ Product reviews refers to reviews that are left by customers for products in the
 **This feature allows us to upload multiple images in the site which can later be used in different areas**
 
 ![](images/others/uploadedfiles.png)
-
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
-
-**Product** this is the product in the website for which the review is made
 
 
 # Reports Features
