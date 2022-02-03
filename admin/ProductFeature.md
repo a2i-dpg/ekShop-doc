@@ -319,27 +319,102 @@ Product reviews refers to reviews that are left by customers for products in the
 
 ![](images/others/allorders.png)
 
+The fields in the table are:
+
+**Order code** this is a unique code that is representative of a specific order
+
+**Number of products** refers to the number of products that was purchased in this order
+
+**Customer** is the name of the customer who the order is associated with
+
+**Amount** is the total amount that was calculated for this order
+
+**Delivery status** refers to whether or not this product is delivered or pending or on the way to being delivered
+
+**Payment status** refers to whether or not this order was paid or not yet paid
+
+Options - view the order, save the order as a file, delete the order
+
+
+
+Pick up point order refers to all the orders for which the option of delivery was pick up point. This means that these orders have to be picked up by the customer having to go to a pick up point that we have designated in the website.
+
+
 # Inhouse Orders
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to view and change orders which were placed for products that we own in the website or as vendors**
 
 ![](images/others/inhouseseller.png)
 
+The fields in the table are:
+
+**Order code** this is a unique code that is representative of a specific order
+
+**Number of products** refers to the number of products that was purchased in this order
+
+**Customer** is the name of the customer who the order is associated with
+
+**Amount** is the total amount that was calculated for this order
+
+**Delivery status** refers to whether or not this product is delivered or pending or on the way to being delivered
+
+**Payment method** refers to the medium by which the payment was made
+
+**Payment status** refers to whether or not this order was paid or not yet paid
+
+Options - view the order, save the order as a file, delete the order
+
 # Seller Orders
 
-**This feature allows us to view and change reviews for products in the site**
+**This feature allows us to view and change orders that are made by sellers in our platform**
 
 ![](images/others/sellerorder.png)
 
+The fields in the table are:
+
+**Order code** this is a unique code that is representative of a specific order
+
+**Number of products** refers to the number of products that was purchased in this order
+
+**Customer** is the name of the customer who the order is associated with
+
+**Amount** is the total amount that was calculated for this order
+
+**Delivery status** refers to whether or not this product is delivered or pending or on the way to being delivered
+
+**Payment method** refers to the medium by which the payment was made
+
+**Payment status** refers to whether or not this order was paid or not yet paid
+
+Options - view the order, save the order as a file, delete the order
+
 # Pickup Point Order
 
-**This feature allows us to view and change reviews for products in the site**
+Pick up point order refers to all the orders for which the option of delivery was pick up point. This means that these orders have to be picked up by the customer having to go to a pick up point that we have designated in the website.
+
+**This feature allows us to view and change orders made for which the delivery option was selected as Pick-Up**
 
 ![](images/others/pickuppointorder.png)
 
-Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
+These orders have to be picked up by the customer by going to a pick up point that was designated in the website.
 
-**Product** this is the product in the website for which the review is made
+The fields in the table are:
+
+**Order code** this is a unique code that is representative of a specific order
+
+**Number of products** refers to the number of products that was purchased in this order
+
+**Customer** is the name of the customer who the order is associated with
+
+**Amount** is the total amount that was calculated for this order
+
+**Delivery status** refers to whether or not this product is delivered or pending or on the way to being delivered
+
+**Payment method** refers to the medium by which the payment was made
+
+**Payment status** refers to whether or not this order was paid or not yet paid
+
+Options - view the order, save the order as a file, delete the order
 
 
 # Customer
