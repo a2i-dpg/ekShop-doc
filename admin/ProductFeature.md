@@ -323,15 +323,19 @@ Product reviews refers to reviews that are left by customers for products in the
 
 **This feature allows us to view and change reviews for products in the site**
 
+![](images/others/inhouseseller.png)
+
 # Seller Orders
 
 **This feature allows us to view and change reviews for products in the site**
+
+![](images/others/sellerorder.png)
 
 # Pickup Point Order
 
 **This feature allows us to view and change reviews for products in the site**
 
-![](images/products/reviews.png)
+![](images/others/pickuppointorder.png)
 
 Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
 
@@ -342,7 +346,7 @@ Product reviews refers to reviews that are left by customers for products in the
 
 **This feature allows us to view and change reviews for products in the site**
 
-![](images/products/reviews.png)
+![](images/others/customers.png)
 
 Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
 

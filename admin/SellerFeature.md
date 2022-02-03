@@ -50,7 +50,7 @@ Product reviews refers to reviews that are left by customers for products in the
 
 **This feature allows us to create a form by defining the various fields in order to collect details about new sellers in the platform**
 
-![](images/others/sellerverificatonform.png)
+![](images/others/sellerverificationform.png)
 
 Product reviews refers to reviews that are left by customers for products in the e-commerce website. It is defined by the follwoing attributes:
 
