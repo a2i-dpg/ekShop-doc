@@ -35,7 +35,6 @@ Our platform is open to modifications by developers by its open source nature. W
 - [Marketing Features](admin/MarketingFeature.md)
 - [Product Features](admin/ProductFeature.md)
 - [Checkout Process](marketplace/CheckoutProcess.md)
-- [Merchant Management](admin/SellerFeature.md)
 
 
 # Requirements
