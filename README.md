@@ -1,11 +1,15 @@
 # ekShop (Marketplace)
 
+ ### ekShop is a fully open-source eCommerce platform that is customizable and configurable to your needs.
+
+ 
 - [About](#about-dpg-marketplace)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Easy Installation](#easy-installation)
 - [Server Setup](#server-setup)
-    - [Ubuntu Server Setup](#update-os-dependency)
+    - [Linux Server Setup For Project Deployment](#linux-server-setup-for-project-deployment)
+    - [Windows Server Setup For Project Local Deployment](#windows-server-setup-for-project-local-deployment)
 - [Install Project using Git](#install-project-using-git)
 
 # About
@@ -39,7 +43,7 @@ Our platform is open to modifications by developers by its open source nature. W
 
 # Requirements
 - Ubuntu Server
-- PHP 7.4
+- PHP 7.3
 - mysql
 - Mariadb Server
 - Laravel 8
@@ -48,7 +52,10 @@ Our platform is open to modifications by developers by its open source nature. W
 
 ## Server Setup
 
-#### Update OS Dependency
+## Linux Server Setup For Project Deployment
+
+<hr /> <br />
+
 ```shell
 sudo apt-get update
 ```
@@ -63,27 +70,56 @@ sudo apt-get install apache2
 sudo apache2ctl configtest
 ```
 
-### Install Db
+<!-- ### Install Db
 ```shell
 sudo apt install mariadb-server
 mysql_secure_installation
 GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
+``` -->
+
+### Install MySQL
+```shell
+sudo apt update
+sudo apt install mysql-client mysql-server
+sudo mysql_secure_installation
+
+CREATE DATABASE laravel;
+mysql -u root -p
+CREATE USER 'laravel'@'localhost' IDENTIFIED BY 'secret';
+GRANT ALL ON laravel.* to 'laravel'@'localhost';
+FLUSH PRIVILEGES;
+quit
 ```
 
-### PHP 7.4 Install
+### PHP 7.3 Install
 ```shell
-sudo apt -y install php7.4
+sudo apt -y install php7.3
 
-sudo apt-get install -y php7.4-cli php7.4-json php7.4-common php7.4-mysql php7.4-zip php7.4-gd php7.4-mbstring php7.4-curl php7.4-xml php7.4-bcmath
+sudo apt-get install -y php7.3-cli php7.3-json php7.3-common php7.3-mysql php7.3-zip php7.3-gd php7.3-mbstring php7.3-curl php7.3-xml php7.3-bcmath
 
-sudo apt-get install php7.4-mysqli
+sudo apt-get install php7.3-mysqli
 
-sudo apt-get install php7.4-xml
+php -v
 ```
 
 ### Restart Apache
 ```shell
 sudo service apache2 restart
+```
+
+### Composer Install 
+
+Once php installed, need to install composer if not installed on machine. To install composer please follow following steps. [Reference link](https://getcomposer.org/download/)
+
+```shell
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+sudo mv composer.phar /usr/local/bin/composer
+
+composer -v
 ```
 
 ### Apache Config and  virtual hosts
@@ -97,13 +133,13 @@ sudo service apache2 restart
 
 ### copy the virtual config
 ```shell
-vi [Your Domain Address].conf
+vi [Real Domain Address or Dummy Domain Address Like (www.dummy-host.com)].conf
 ```
 
 ```shell
     <VirtualHost *:80>
-        ServerName [Your Domain Address]
-        ServerAdmin webmaster@[Your Domain Address]
+        ServerName [Real Domain Address or Dummy Domain Address Like (www.dummy-host.com)]
+        ServerAdmin webmaster@[Real Domain Address or Dummy Domain Address Like (www.dummy-host.com)]
         DocumentRoot /var/www/html
 
         <Directory /var/www/html>
@@ -117,10 +153,37 @@ vi [Your Domain Address].conf
 
 ```shell
 sudo a2dissite 000-default.conf
-sudo a2ensite [Your domain address]
+sudo a2ensite [Real Domain Address or Dummy Domain Address Like (www.dummy-host.com)]
 sudo a2enmod rewrite
 sudo systemctl restart apache2
 ```
+
+
+## Windows Server Setup For Project Local Deployment
+<hr /> <br />
+
+
+Use XAMPP or WAMP, if use XAMPP (PHP development environment) for installing php and Mysql or MariaDB server in windows local machine, for this case download xampp version (7.3 / PHP 7.3) in c drive.
+
+Once installed xapmm, update configure apache server if needed, in this case go to C:\xampp\php\php.ini and extend limit max_execution_time = 10000 , max_input_time = 10000, memory_limit = 2048M, post_max_size = 2048M, upload_max_filesize = 2048M .
+
+
+### Composer Install
+Once XAMPP installed successfully, need to install composer if not installed on machine. To install composer please follow following steps. [Download link](https://getcomposer.org/download/)
+
+Download and run Composer-Setup.exe - it will install the latest composer version whenever it is executed.
+Once downloaded composer.exe, install this file and use command line path (C:\xampp\php\php.exe)
+
+Now open the xampp server then run Apache and MySQL service.
+
+Project folder path should be C:\xampp\htdocs 
+
+To check composer version run this command into cli
+
+```shell
+composer -v
+```
+
 
 
 ## Install Project using Git
@@ -134,6 +197,13 @@ sudo systemctl restart apache2
     php artisan key:generate
     php artisan passport:install --force
 ```
+
+### Site URL Shoud Be Like
+- http://localhost/project_folder  
+or
+- http://www.dummy-host.com (Or Real Domain Address)
+
+
 
 ### Default Users
 
